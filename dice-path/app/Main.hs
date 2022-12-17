@@ -1,4 +1,3 @@
--- {-#LANGUAGE BangPatterns #-}
 module Main where
 
 import qualified Data.Vector as V
