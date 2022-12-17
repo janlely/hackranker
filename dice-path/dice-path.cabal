@@ -67,9 +67,9 @@ executable dice-path
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    
+    build-depends:
         base ^>=4.16.3.0
-      , vector 
+      , vector
 
     -- Directories containing source files.
     hs-source-dirs:   app
