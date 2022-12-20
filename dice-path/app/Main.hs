@@ -3,7 +3,6 @@ module Main where
 import qualified Data.Vector as V
 import Control.Monad (replicateM_)
 import qualified Data.List as L
-import Data.Ord (comparing)
 
 main :: IO ()
 main = do
@@ -49,4 +48,4 @@ solve n = foldl f vi $ tail [(i,j)| i<- [0..n-1], j <- [0..n-1]]
                                          in (score + top dice', dice')
                 take6 [] = []
                 take6 s = let ms = (L.maximum . fmap fst) s
-                           in L.filter ((>= ms - 6) . fst) s
+                           in L.filter ((>= ms - 5) . fst) s
